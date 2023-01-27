@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install mysql-server -y
+sudo systemctl start mysql.service
+sudo mysql_secure_installation
+sudo mysql
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+

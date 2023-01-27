@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mysqldump -u backup -p"TestP@ssw0rdd" testdb > /home/shleper/testdb/db-$(date +\%Y-\%m-\%d).sql

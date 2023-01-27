@@ -1,0 +1,12 @@
+# Let NetworkManager manage all devices on this system
+network:
+  ethernets:
+    enp0s3:
+      dhcp4: true
+      optional: true
+    enp0s8:
+      dhcp4: no
+      optional: true
+      addresses: [172.16.13.2/24]
+  version: 2
+  renderer: NetworkManager
